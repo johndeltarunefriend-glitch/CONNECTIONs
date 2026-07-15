@@ -1,0 +1,48 @@
+body{
+  background-color: black;
+    margin-top: 5%;
+}
+main{
+    background-color: black;
+    margin-top: 2%;
+}
+MYSTERY_MAN{
+    color: rgb(255, 255, 255);
+}
+.prop{
+    position:absolute;
+    margin-left: 40%;
+    display: inline-block;
+    text-decoration: white;
+    font-size: 150%;
+    color: white;
+    font:Tahoma;
+}
+WDG{
+    font-size: 66%;
+    color: black;
+}
+.shake{
+  animation: shake 5s infinite alternate;
+}
+.typing-text {
+  font-family: monospace;
+  font-size: 24px;
+  white-space: nowrap; /* Запрещаем перенос строк */
+  overflow: hidden; /* Скрываем текст, который еще не появился */
+  width: 0; /* Изначальная ширина блока 0 */
+  border-right: 2px solid black; /* Создаем эффект курсора */
+  animation: typing 4s steps(50, end) forwards, blink 0.75s step-start infinite;
+  
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) ; opacity: 1; }
+  25% { transform: translate(-1px, -2px) ; opacity: 0.75; }
+  50% { transform: translate(-3px, 2px) ; opacity: 0.5; }
+  75% { transform: translate(3px, 1px) ; opacity: 0.75; }
+  100% { transform: translate(1px, -1px) ; opacity: 1; }
+}
